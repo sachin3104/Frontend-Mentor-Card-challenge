@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Single Price Grid Component</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    html{
+      box-sizing:border-box;
+      font-family:Karla;
+    }
+    *,*:before,*:after{
+      box-sizing:inherit;
+    }
+    h2 ,h4,p{
+      margin:0;
+    }
+    body{
+      background-color:#e5eff5;
+      padding:40px;
+    }
+    .card{
+      width: 600px;
+      height: 400px;
+      box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.58);
+      border-radius:5px;
+      overflow:hidden;
+    }
+    .upper-section{
+      background-color:white;
+      height:45%;
+      width:100%;
+      padding:25px;
+    }
+    .bottom-section{
+      height:55%;
+      width:100%;
+      padding:0;
+      color:white;
+    }
+    .bottom-left-section{
+      margin:0;
+      height:100%;
+      width:50%;
+      padding:25px;
+      background-color:#2ab2af;
+      display:inline-block;
+      vertical-align:top;
+    }
+    .bottom-right-section{
+      height:100%;
+      width:50%;
+      padding:25px;
+      background-color:#2EBFBD;
+      display:inline-block;
+      vertical-align:top;
+    }
+
+    .upper-section h2{
+      margin-bottom:15px;
+      color:#2EBFBD;
+    }
+    .upper-section h4{
+      margin-bottom:10px;
+      color:#c0df34;
+    }
+    .upper-section p{
+      color:#98a6bd;
+    }
+
+    .bottom-left-section h4{
+      margin-bottom:15px;
+    }
+    .bottom-left-section p{
+      margin:10px 0px 20px 0px;
+    }
+    .btn{
+      width:100%;
+      padding:10px;
+      color:white;
+      background-color:#c0df34;
+      border:none;
+      border-radius:5px;
+    }
+    button:hover{
+      cursor:pointer;
+      background-color:#A9C42D;
+      transform:scale(1.02);
+    }
+    .price, .price-details{
+      display:inline-block;
+    }
+    .price{
+      font-weight:700;
+      font-size:1.5rem;
+    }
+    .price-details{
+      position:relative;
+      top:-3px;
+      margin-left:5px;
+      opacity:0.7;
+    }
+    .price-container{
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+    .bottom-right-section ul{
+      padding:0;
+      list-style:none;
+      opacity:0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="upper-section">
+      <h2>Join our community</h2>
+      <h4>30-day, hassle-free money back guarantee</h4>
+      <p>Gain access to our full library of tutorials along with expert code reviews. 
+          Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+    <div class="bottom-section">
+      
+      <div class="bottom-left-section">
+        <h4>Monthly Subscription</h4>
+        <div class='price-container'>
+          <div class="price">&dollar;29</div>
+          <div class="price-details">per month</div>
+        </div>
+        <p>Full access for less than &dollar;1 a day</p>
+        <button class="btn" onclick="alertUser()" >Sign Up</button>
+      </div><div class="bottom-right-section">
+        <h4>Why Us</h4>
+        <ul>
+          <li>Tutorials by industry experts</li>
+          <li>Peer &amp; expert code review</li>
+          <li>Coding exercises</li>
+          <li>Access to our GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Sachin Jakhar</a>.
+    </p>
+  </footer>
+</body>
+<script>
+  function alertUser(){
+    alert("You have pressed the button.");
+  }
+</script>
+</html>
